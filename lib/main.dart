@@ -35,7 +35,7 @@ class _HomePageState extends State<HomePage> {
             child: Shimmer.fromColors(
               baseColor: Colors.red,
               highlightColor: Colors.yellow,
-              child: Text(
+              child: const Text(
                 'Shimmer',
                 textAlign: TextAlign.center,
                 style: TextStyle(
@@ -45,11 +45,11 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
           ),
-          Container(
+          SizedBox(
             width: 300,
             height: 100,
             child: Shimmer.fromColors(
-              child: Card(),
+               child: Card(),
               baseColor: Colors.grey.shade300,
               highlightColor: Colors.grey.shade100,
             ),
